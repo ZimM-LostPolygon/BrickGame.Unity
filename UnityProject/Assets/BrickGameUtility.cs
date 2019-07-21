@@ -70,7 +70,7 @@ namespace BrickGame
                     if (empty)
                         continue;
 
-                    if (j < min.x)
+                    if (i < min.x)
                     {
                         min.x = i;
                     }

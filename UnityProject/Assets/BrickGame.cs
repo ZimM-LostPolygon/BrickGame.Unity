@@ -21,13 +21,13 @@ namespace BrickGame
 
         public Piece ActivePiece => _activePiece;
 
-        public BrickGame(int playfieldWidth, int playfieldHeight, int visiblePlayfieldHeight, float InitialGravity)
+        public BrickGame(int playfieldWidth, int playfieldHeight, int visiblePlayfieldHeight, float initialGravity)
         {
             VisiblePlayfieldHeight = visiblePlayfieldHeight;
             PlayfieldWidth = playfieldWidth;
             PlayfieldHeight = playfieldHeight;
             Playfield = BrickGameUtility.Create2DArray<PlayfieldCell>(PlayfieldWidth, PlayfieldHeight);
-            _currentGravity = InitialGravity;
+            _currentGravity = initialGravity;
         }
 
         public void RotateActivePiece(PieceRotationDirection direction)
